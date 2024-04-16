@@ -28,7 +28,7 @@ g(signalList = []); {
     else return 0; //Desativado
 }
 
-mutate(rate = 1); {
+mutate(rate = 0.2); {
     this.weightList = this.weightList.map(() => {
         return lerp(w, randomRange(-1, 1), rate)
     });
